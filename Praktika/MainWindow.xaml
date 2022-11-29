@@ -1,0 +1,35 @@
+﻿<Window x:Class="Praktika.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Praktika"
+        mc:Ignorable="d"
+        Title="Главная" Height="458" Width="309" WindowStartupLocation="CenterScreen">
+
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black"/>
+            <GradientStop Color="#FFFF700C" Offset="1"/>
+            <GradientStop Color="#FFC75709" Offset="0.59"/>
+            <GradientStop Color="#FFD35C09" Offset="0.845"/>
+            <GradientStop Color="#FFB64F08" Offset="0.35"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid Margin="0,0,0,13">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFFF700C" Offset="0.812"/>
+                <GradientStop Color="White" Offset="0.281"/>
+                <GradientStop Color="#FFFFFBF8" Offset="0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Label Content="Добро пожаловать" HorizontalAlignment="Center" Margin="0,84,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Image Margin="10,10,225,348" Source="service_logo.ico" Stretch="Fill"/>
+        <Button x:Name="buttonlogin" Content="Service" HorizontalAlignment="Center" Margin="0,149,0,0" VerticalAlignment="Top" Width="184" Click="Btn_ClientSer" Background="#FFFFBA22" RenderTransformOrigin="0.5,-0.062" Height="35"/>
+        <Button x:Name="guest" Content="ClientServise" HorizontalAlignment="Center" VerticalAlignment="Top" Width="184" Click="Btn_Serv" Background="#FFFFBA22" Height="35" Margin="0,230,0,0"/>
+        <Button x:Name="guest_Copy" Content="Close" HorizontalAlignment="Center" VerticalAlignment="Top" Width="184" Click="Btm_close"  Background="#FFFFBA22" Height="35" Margin="0,315,0,0"/>
+
+    </Grid>
+</Window>
