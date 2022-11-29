@@ -19,7 +19,7 @@
         </Grid.ColumnDefinitions>
         <DataGrid x:Name="TableServ" Margin="0,158,0,10" IsReadOnly="False" AutoGenerateColumns="False" Width="NaN" Height="NaN" RenderTransformOrigin="0.506,0.491" Grid.ColumnSpan="2" Background="#FFF9C687" BorderBrush="#FFB37450">
             <DataGrid.Columns>
-                <Design:DataGridTextColumn Width="*" x:Name="ID" Binding="{Binding ID}" Header="ID" IsReadOnly="False"/>
+                <Design:DataGridTextColumn Width="*" x:Name="ID" Binding="{Binding ID}" Header="ID" IsReadOnly="False" Visibility="Hidden" />
                 <Design:DataGridTextColumn Width="*" x:Name="Title" Binding="{Binding Title}" Header="Title" IsReadOnly="False"/>
                 <Design:DataGridTextColumn Width="*" x:Name="Cost" Binding="{Binding Cost}" Header="Cost" IsReadOnly="False"/>
                 <Design:DataGridTextColumn Width="*" x:Name="DurationInSeconds" Binding="{Binding DurationInSeconds}" Header="DurationInSeconds" IsReadOnly="False"/>

@@ -22,7 +22,7 @@
         </Grid.RowDefinitions>
         <DataGrid x:Name="TableClientservice" IsReadOnly="False" AutoGenerateColumns="False"  RenderTransformOrigin="0.506,0.491" HorizontalAlignment="Center" Width="988" Height="451" VerticalAlignment="Top" Background="#FFF9C687" Margin="0,127,0,0" Grid.RowSpan="2">
             <DataGrid.Columns>
-                <materialDesign:DataGridTextColumn Width="*" x:Name="ID" Binding="{Binding ID}" Header="ID" IsReadOnly="False"/>
+                <materialDesign:DataGridTextColumn Width="*" x:Name="ID" Binding="{Binding ID}" Header="ID" IsReadOnly="False" Visibility="Hidden"/>
                 <materialDesign:DataGridTextColumn Width="*" x:Name="ClientID" Binding="{Binding Client.FirstName}" Header="ClientID" IsReadOnly="False"/>
                 <materialDesign:DataGridTextColumn Width="*" x:Name="ServiceID" Binding="{Binding ServiceCenter.Title}" Header="ServiceID" IsReadOnly="False"/>
                 <materialDesign:DataGridTextColumn Width="*" x:Name="StartTime" Binding="{Binding StartTime}" Header="StartTime" IsReadOnly="False"/>
